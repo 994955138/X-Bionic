@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.imcore.x_bionic.ui.LoadingActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <ProgressBar
+        android:id="@+id/Pb_welcome_background"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="220dp"
+        android:layout_height="150dp"
+        android:background="#FFFFFF"
+        android:layout_centerInParent="true"
+        android:max="100"
+        android:progress="0"
+        android:progressDrawable="@drawable/laoding_activity_progress" />
+
+    <FrameLayout
+        android:id="@+id/fl_welcom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/demo1" />
+
+</RelativeLayout>

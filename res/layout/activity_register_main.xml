@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.imcore.x_bionic.ui.register.RegisterMainActivity"
+    tools:ignore="MergeRootFrame"
+    android:background="@drawable/allbackground" >
+    <Button
+        android:id="@+id/sina_log"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/sina_register"
+        
+        />
+    <Button
+     
+        android:id="@+id/tencent_log"
+           android:layout_below="@+id/sina_log"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/qq_register"
+        />
+    <Button
+        android:id="@+id/phone_log"
+        android:layout_below="@+id/tencent_log"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/telephone_register"
+        />
+    
+</RelativeLayout>
+

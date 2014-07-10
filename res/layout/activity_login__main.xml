@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/allbackground"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.imcore.x_bionic.ui.login.LoginMainActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <ImageView
+        android:id="@+id/home_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:contentDescription="@null"
+        android:src="@drawable/xlogo" />
+
+    <Button
+        android:id="@+id/tencent_login"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/qq_login" />
+
+
+    <Button
+        android:id="@+id/sina_login"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/sina_login" />
+
+    <Button
+        android:id="@+id/tribe_login"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/login" />
+
+    <Button
+        android:id="@+id/new_user"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/register" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" >
+
+        <Button
+            android:id="@+id/home_help"
+            android:layout_width="30dp"
+            android:layout_height="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/help_1" />
+
+        <Button
+            android:id="@+id/home_terms"
+            android:layout_width="60dp"
+            android:layout_height="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/serve_1" />
+    </RelativeLayout>
+
+</LinearLayout>

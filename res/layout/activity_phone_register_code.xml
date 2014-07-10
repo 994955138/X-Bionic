@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.imcore.x_bionic.ui.register.PhoneRegisterCodeActivity"
+    tools:ignore="MergeRootFrame" 
+    android:background="@drawable/allbackground">
+<EditText
+    android:id="@+id/et_checkNumber"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@drawable/telphone_text"
+    android:hint="输入手机号"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"/>  
+ <Button
+        android:id="@+id/butt_get_pass"
+        android:layout_below="@+id/et_checkNumber"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/user_info_btn2"
+        android:text="获取验证码"
+        android:textColor="#FFFFFF"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+    
+</RelativeLayout>
+

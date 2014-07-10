@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.imcore.x_bionic"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.imcore.x_bionic.ui.LoadingActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.imcore.x_bionic.ui.login.LoginMainActivity"
+            android:label="@string/title_activity_login__main" >
+        </activity>
+        <activity
+            android:name="com.imcore.x_bionic.ui.login.TxLoginActivity"
+            android:label="@string/title_activity_tx_login" >
+        </activity>
+        <activity
+            android:name="com.imcore.x_bionic.ui.register.RegisterMainActivity"
+            android:label="@string/title_activity_register_main" >
+        </activity>
+        <activity
+            android:name="com.imcore.x_bionic.ui.register.PhoneRegisterCodeActivity"
+            android:label="@string/title_activity_phone_register_code" >
+        </activity>
+        <activity
+            android:name="com.imcore.x_bionic.ui.register.PhoneRegisterInfoActivity"
+            android:label="@string/title_activity_phone_register_info" >
+        </activity>
+        <activity
+            android:name="com.imcore.x_bionic.ui.login.XLLoginActivity"
+            android:label="@string/title_activity_xllogin" >
+        </activity>
+        <activity
+            android:name="com.imcore.x_bionic.ui.login.XLoginActivity"
+            android:label="@string/title_activity_xlogin" >
+        </activity>
+        <activity
+            android:name="com.imcore.x_bionic.ui.HomeActivity"
+            android:label="@string/title_activity_home" >
+        </activity>
+        <activity
+            android:name="com.imcore.x_bionic.ui.ActivitiesMainActivity"
+            android:label="@string/title_activity_activities_main" >
+        </activity>
+        <activity
+            android:name="com.imcore.x_bionic.ui.ExpertStoryHomeActivity"
+            android:label="@string/title_activity_expert_story_home" >
+        </activity>
+        <activity
+            android:name="com.imcore.x_bionic.ui.ProductMainActivity"
+            android:label="@string/title_activity_product_main" >
+        </activity>
+        <activity
+            android:name="com.imcore.x_bionic.ui.IntroductionHomeActivity"
+            android:label="@string/title_activity_introduction_home" >
+        </activity>
+        <activity
+            android:name="com.imcore.x_bionic.ui.FirstLoginActivity"
+            android:label="@string/title_activity_first_login" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">X-Bionic</string>
+    <string name="hello_world">无线增值服务，欢迎您</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login__main">Login_MainActivity</string>
+    <string name="title_activity_tx_login">TxLoginActivity</string>
+    <string name="title_activity_register_main">RegisterMainActivity</string>
+    <string name="title_activity_phone_register_code">PhoneRegisterCodeActivity</string>
+    <string name="title_activity_phone_register_info">PhoneRegisterInfoActivity</string>
+    <string name="title_activity_xllogin">XLLoginActivity</string>
+    <string name="title_activity_xlogin">XLoginActivity</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_activities_main">ActivitiesMainActivity</string>
+    <string name="title_activity_expert_story_home">ExpertStoryHomeActivity</string>
+    <string name="title_activity_product_main">ProductMainActivity</string>
+    <string name="title_activity_introduction_home">IntroductionHomeActivity</string>
+    <string name="title_activity_first_login">FirstLoginActivity</string>
+
+</resources>

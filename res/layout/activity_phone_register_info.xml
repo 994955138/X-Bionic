@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.imcore.x_bionic.PhoneRegisterInfoActivity"
+    tools:ignore="MergeRootFrame"
+    android:background="@drawable/allbackground" >
+    <EditText
+    android:id="@+id/et_phone_pass_n."
+    android:layout_width="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_height="40dp"
+    android:hint="输入手机验证码(必填)"
+    android:background="@drawable/telphone_text2"/>
+  
+<EditText
+    android:id="@+id/et_login_pass_n."
+    android:layout_below="@+id/et_phone_pass_n."
+    android:layout_width="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_height="40dp"
+       android:layout_marginTop="20dp"
+    android:hint="输入登录密码(必填)"
+     android:background="@drawable/telphone_text2"/>
+
+<EditText
+    android:id="@+id/et_intelligent_pass_n."
+    android:layout_below="@+id/et_login_pass_n."
+    android:layout_width="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_height="40dp"
+       android:layout_marginTop="20dp"
+    android:hint="输入达人验证码(可选)"
+     android:background="@drawable/telphone_text2"/>
+
+<CheckBox
+    android:id="@+id/cb_accept_sevice"
+    android:layout_below="@+id/et_intelligent_pass_n."
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="10dp"
+    android:text="同意用户服务协议"
+     android:textColor="#FFFFFF"
+    />
+ 
+<CheckBox
+    android:id="@+id/cb_applicat_intenlligent"
+    android:layout_below="@+id/cb_accept_sevice"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+       android:layout_marginTop="20dp"
+    android:layout_marginLeft="10dp"
+    android:text="申请成为部落达人"
+     android:textColor="#FFFFFF"
+
+    />
+
+<Button
+    android:id="@+id/bt_phone_login"
+    android:layout_below="@+id/cb_applicat_intenlligent"
+    android:layout_width="match_parent"
+
+    android:layout_height="40dp"
+       android:layout_marginTop="20dp"
+     android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:text="注册"
+    android:textColor="#FFFFFF"
+    android:background="@drawable/login_2"
+    />
+    
+</RelativeLayout>
+
+
+
