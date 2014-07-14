@@ -15,26 +15,35 @@ import com.android.volley.toolbox.DiskBasedCache;
 import com.android.volley.toolbox.HttpClientStack;
 import com.android.volley.toolbox.HttpStack;
 import com.android.volley.toolbox.HurlStack;
+import com.android.volley.toolbox.ImageLoader;
 
 /**
- * Volley请求队列单例
+ * Volley组件单例
  * 
- * @author user
+ * @author Li Bin
  */
 public class RequestQueueSingleton {
 	private static RequestQueueSingleton mInstance;
 
+	private Context mContext;
 	private RequestQueue mRequestQueue;
+	private ImageLoader mImageLoader;
 
 	// 私有构造函数，初始化请求队列
 	private RequestQueueSingleton(Context context) {
-		Cache cache = new DiskBasedCache(context.getCacheDir(), 1024 * 1024);
+		mContext = context;
+		setUpRequestQueue();
+		setUpImageLoader();
+	}
+
+	private void setUpRequestQueue() {
+		Cache cache = new DiskBasedCache(mContext.getCacheDir(), 1024 * 1024);
 
 		HttpStack stack = null;
 		String userAgent = "volley/0";
 		try {
-			String packageName = context.getPackageName();
-			PackageInfo info = context.getPackageManager().getPackageInfo(
+			String packageName = mContext.getPackageName();
+			PackageInfo info = mContext.getPackageManager().getPackageInfo(
 					packageName, 0);
 			userAgent = packageName + "/" + info.versionCode;
 		} catch (NameNotFoundException e) {
@@ -48,22 +57,37 @@ public class RequestQueueSingleton {
 
 		Network network = new BasicNetwork(stack);
 		mRequestQueue = new RequestQueue(cache, network);
+		// mRequestQueue = Volley.newRequestQueue(context)
 		mRequestQueue.start();
 	}
 
-	public static RequestQueueSingleton getInstance(Context context) {
+	private void setUpImageLoader() {
+		mImageLoader = new ImageLoader(mRequestQueue, new LruImageCache(
+				mContext));
+	}
+
+	/**
+	 * 获得单件实例,确保请求队列，图片加载器对象都具有全局唯一实例
+	 * 
+	 * @param context
+	 * @return
+	 */
+	public synchronized static RequestQueueSingleton getInstance(Context context) {
 		if (mInstance == null) {
 			mInstance = new RequestQueueSingleton(context);
 		}
 		return mInstance;
 	}
-	
+
 	public RequestQueue getRequestQueue() {
 		return mRequestQueue;
 	}
 
-	@SuppressWarnings({ "rawtypes", "unchecked" })
-	public void addToRequestQueue(Request request) {
+	public ImageLoader getImageLoader() {
+		return mImageLoader;
+	}
+
+	public void addToRequestQueue(Request<?> request) {
 		mRequestQueue.add(request);
 	}
 

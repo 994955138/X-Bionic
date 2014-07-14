@@ -15,8 +15,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Switch;
-
 import com.imcore.x_bionic.R;
 import com.imcore.x_bionic.ui.fragment.FragementHomeTwo;
 import com.imcore.x_bionic.ui.fragment.FragmentHomeFour;
@@ -88,7 +86,7 @@ public class HomeActivity extends ActionBarActivity {
     	
     }
 	
-	private class ViewPagerAdapter extends FragmentStatePagerAdapter{
+	public class ViewPagerAdapter extends FragmentStatePagerAdapter{
 
 		public ViewPagerAdapter(FragmentManager fm) {
 			super(fm);

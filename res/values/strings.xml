@@ -17,5 +17,6 @@
     <string name="title_activity_product_main">ProductMainActivity</string>
     <string name="title_activity_introduction_home">IntroductionHomeActivity</string>
     <string name="title_activity_first_login">FirstLoginActivity</string>
+    <string name="title_activity_product_details">ProductDetailsActivity</string>
 
 </resources>
