@@ -1,7 +1,7 @@
 package com.imcore.x_bionic.ui.fragment;
 
 import com.imcore.x_bionic.R;
-import com.imcore.x_bionic.ui.ProductMainActivity;
+import com.imcore.x_bionic.ui.product.ProductMainActivity;
 
 import android.content.Intent;
 import android.os.Bundle;

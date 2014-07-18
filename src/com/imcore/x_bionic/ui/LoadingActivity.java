@@ -5,6 +5,7 @@ import java.util.TimerTask;
 
 import com.imcore.x_bionic.R;
 import com.imcore.x_bionic.ui.login.LoginMainActivity;
+import com.imcore.x_bionic.ui.product.ProductMainActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -53,9 +54,10 @@ public class LoadingActivity extends ActionBarActivity {
 				progress++;
 				mProgressBar.setProgress(progress);
 			} else {
-				Intent intent = new Intent(LoadingActivity.this,
-						LoginMainActivity.class);
-				startActivity(intent);
+//				Intent intent = new Intent(LoadingActivity.this,
+//						LoginMainActivity.class);
+//				startActivity(intent);
+				startActivity(new Intent(LoadingActivity.this, ProductMainActivity.class));
 				mTimer.cancel();//timer只要没有被cacel就一直会在后台运行，会所以没有cancel的话就会一直执行跳转到LoginMainActivity
 			}
 		}
